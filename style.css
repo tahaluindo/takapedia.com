@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-txt-color: yellow;
+    --main-box-shadow: yellow;
+}
+
+body {
+    background-color: hsl(213, 11%, 20%);
+    padding-bottom: 1000px;
+}
+
+.container {
+    margin: 30px auto;
+    height: 100vh;
+    max-width: 830px;
+}
+
+.carousel {
+    width: 62%;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.carousel-inner {
+    box-shadow: rgb(18, 17, 17) 0 0 10px 0;
+}
+/*Element Kosong*/
+.empty {
+    height: 50px;
+}
+/*End-Element Kosong*/
+
+/*Content*/
+.button {
+    color: #fff;
+    padding: 7px;
+    margin: 0;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: cursive;
+    cursor: default;
+    background-color: rgb(32,36,40);
+}
+
+.button:hover {
+    background-color: hsl(213, 11%, 20%);
+    color: white;
+    transition: 0.2s ease;
+}
+
+.container-card {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.container-card2 {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.container-card3 {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 3px;
+    background-color: #212529;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgb(32,36,40) 0 0 20px 0;
+}
+
+.child {
+    width: 125px;
+    border: transparent;
+    height: 150px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(33,37,41);
+}
+
+.child:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.child a {
+    text-decoration: none;
+    color: white;
+}
+
+.child img {
+    height: 60%;
+    max-width: 80%;
+    margin: -40px 15px;
+    border-radius: 5px;
+}
+
+.child img:hover {
+    box-shadow: var(--main-box-shadow) 0 0 10px 0;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.child .title  {
+    padding-top: 50px;
+    font-size: smaller;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.child .caption {
+    padding-top: 45px;
+    font-size: smaller;
+    color: var(--main-txt-color);
+    text-align: center;
+
+}
+
+.nav-item {
+    nav-right: auto;
+}
+
+
+
+/*End-Content*/
+
+
+
+
+@media (max-width: 1200px) {
+    .carousel {
+        width: 70%;
+    }
+    .child {
+        width: 125px;
+        border: transparent;
+        height: 150px;
+        color: white;
+        border-radius: 5px;
+        background-color: rgb(33,37,41);
+    }
+}
+
+@media (max-width: 990px) { /*Nav*/
+    .carousel {
+        width: 100%;
+    }
+    .button {
+        margin: 0px 40px;
+        padding: 5px;
+        transform: scale(0.7);
+    }
+
+    .container-card {
+        justify-content: space-around;
+    }
+    
+    .card {
+        align-items: center;
+    }
+    
+    .child {
+        width: 100px;
+        border: transparent;
+        height: 130px;
+        color: white;
+        border-radius: 5px;
+        background-color: rgb(33,37,41);
+    }
+
+    .child img {
+        margin: -55px 10.5px;
+    }
+
+    .card .child:hover .img {
+        box-shadow: var(--main-box-shadow) 0 0 10px 0;
+        transition: 0.5s ease;
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    .child .title  {
+        padding-top: 35px;
+        font-size: 0.8rem;
+        margin: 0 10px;
+    }
+
+    .child .caption {
+        padding-top: 30px;
+        margin: 0 3px;
+    }
+}
